@@ -3,4 +3,5 @@
 Oct 13 2023
 20:47:58
 C:/Users/Zach/SHA256/SHA256.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v,1709539952,systemVerilog,,,,SHA256_Core,,uvm,,,,,,
+C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v,1709603870,systemVerilog,,C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_tb.sv,,SHA256_Core,,uvm,,,,,,
+C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_tb.sv,1709603957,systemVerilog,,,,SHA256_tb,,uvm,,,,,,

@@ -27,17 +27,22 @@ module SHA256_Core #(
     input logic [31:0] test,
     //input [511:0] key, //This is going to be same size every time with precomputed values for now
     //output [255:0] computed_hash
-    output logic [31:0] out
+    output logic [31:0] outs0,
+    output logic [31:0] outs1,
+    output logic [31:0] outS0,
+    output logic [31:0] outS1,
+    output logic [31:0] outMaj,
+    output logic [31:0] outChoice
     );
     
-    logic clk;
-    initial begin
-    clk = 1'b1;
-    end
     
+    
+    logic [31:0] word2, word3;
+    
+    assign word2 = test >> 14;
+    assign word3 = test << 9;
     //logic [31:0] out;
     
-    always #PERIOD clk = ~clk;
     
    // logic [31:0] test;
     //assign test = 32'h00000011;
@@ -131,9 +136,13 @@ module SHA256_Core #(
     endfunction
     
     
-    assign out = s0(test);
-    logic [31:0] out2;
-    assign out2 = s1(test);
+    assign outs0 = s0(test);
+    assign outs1 = s1(test);
+    assign outS0 = S0(test);
+    assign outS1 = S1(test);
+    assign outChoice = Choice(test, word2, word3);
+    assign outMaj = Maj(test,word2,word3);
+    //assign out2 = s1(test);
     
     
     

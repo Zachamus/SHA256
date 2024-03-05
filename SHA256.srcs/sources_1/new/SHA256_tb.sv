@@ -24,9 +24,43 @@ module SHA256_tb();
 
 logic clk = 1'b1;
 
-always #1 clk = ~clk;
+always #5 clk = ~clk;
 
+logic [31:0] test_vecs;
+logic [31:0] outs0, outs1, outS0, outS1, outMaj, outChoice;
 
+SHA256_Core core (
+    .test(test_vecs),
+    .outs0(outs0),
+    .outs1(outs1),
+    .outS0(outS0),
+    .outS1(outS1),
+    .outMaj(outMaj),
+    .outChoice(outChoice)
+    );
+    
+initial begin
+
+    test_vecs = 32'h1234abcd;
+    
+    #200
+    
+    test_vecs = 32'habcd1234;
+    
+    #200
+    
+    test_vecs = 32'hdeadbeef;
+    
+    #200
+    
+    test_vecs = 32'hbeefdead;
+    
+    #500
+    $finish;
+end
+    
+    
+    
 
 
 endmodule
