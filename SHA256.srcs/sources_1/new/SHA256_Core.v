@@ -99,7 +99,36 @@ module SHA256_Core #(
             S1 = rotr6 ^ rotr11 ^ rotr25;
             end
             endfunction
+            
+            
+    function automatic [31:0] Choice (input logic [31:0] word,
+                                      input logic [31:0] word2,
+                                      input logic [31:0] word3);
+                                       
+            begin
+                for (int i = 0; i < 32; i++) begin
+                    if (word[i] == 1)
+                        Choice[i] = word2[i];
+                    else
+                        Choice[i] = word3[i];
+            end
+                end
+    endfunction
     
+    
+    function automatic [31:0] Maj (input logic [31:0] word,
+                                   input logic [31:0] word2,
+                                   input logic [31:0] word3);
+                                       
+            begin
+                for (int i = 0; i < 32; i++) begin
+                    if (((word[i] == 1) && ((word2[i] == 1) || (word3[i] == 1))) || (word2[i] == 1 && word3[i] ==1)) //if at least 2 bits are 1 then output is 1, else 0
+                        Maj[i] = 1;
+                    else
+                        Maj[i] = 0;
+            end
+                end
+    endfunction
     
     
     assign out = s0(test);
