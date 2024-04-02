@@ -32,20 +32,15 @@ module SHA256_Core #(
     output logic [31:0] outS0,
     output logic [31:0] outS1,
     output logic [31:0] outMaj,
-    output logic [31:0] outChoice
+    output logic [31:0] outChoice,
+    input logic reset,
+    input logic clk
     );
     
     
-    
-    logic [31:0] word2, word3;
-    
-    assign word2 = test >> 14;
-    assign word3 = test << 9;
-    //logic [31:0] out;
-    
-    
-   // logic [31:0] test;
-    //assign test = 32'h00000011;
+    logic [511:0] key;
+    assign key = 512'd58923;
+
     
     
     function automatic [31:0] s0 (input logic [31:0] word); //sigma 0
@@ -136,16 +131,55 @@ module SHA256_Core #(
     endfunction
     
     
-    assign outs0 = s0(test);
-    assign outs1 = s1(test);
-    assign outS0 = S0(test);
-    assign outS1 = S1(test);
-    assign outChoice = Choice(test, word2, word3);
-    assign outMaj = Maj(test,word2,word3);
-    //assign out2 = s1(test);
+    logic [31:0] hash_a;
+    logic [31:0] hash_b;
+    logic [31:0] hash_c;
+    logic [31:0] hash_d;
+    logic [31:0] hash_e;
+    logic [31:0] hash_f;
+    logic [31:0] hash_g;
+    logic [31:0] hash_h;
+    
+    logic  [31:0] message_words [63:0]  ;
+
     
     
-    
+    always @(key or reset) begin //create message schedule
+        if (reset) begin
+        for (integer i = 0; i < 64; i++) begin
+            message_words[i] = 32'h0;
+        end
+        end
+        
+        else begin
+        
+        message_words[0] = key[31:0];
+        message_words[1] = key[63:32];
+        message_words[2] = key[95:64];
+        message_words[3] = key[127:96];
+        message_words[4] = key[159:128];
+        message_words[5] = key[191:160];
+        message_words[6] = key[223:192];
+        message_words[7] = key[255:224];
+        message_words[8] = key[287:256];
+        message_words[9] = key[319:288];
+        message_words[10] = key[351:320];
+        message_words[11] = key[383:352];
+        message_words[12] = key[415:384];
+        message_words[13] = key[447:416];
+        message_words[14] = key[479:448];
+        message_words[15] = key[511:480];
+        
+        for (integer j = 16; j < 64; j++) begin
+            message_words[j] = (s1(message_words[j-2]) + message_words[j-7] + s0(message_words[j-15]) + message_words[j-16]); 
+        
+        
+        
+        end
+        
+        end
+        
+    end
     
     
     

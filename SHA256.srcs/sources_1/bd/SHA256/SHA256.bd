@@ -1,0 +1,25 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../SHA256.gen/sources_1/bd/SHA256",
+      "name": "SHA256",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "blk_mem_gen_0": ""
+    },
+    "components": {
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "SHA256_blk_mem_gen_0_0",
+        "xci_path": "ip\\SHA256_blk_mem_gen_0_0\\SHA256_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0"
+      }
+    }
+  }
+}

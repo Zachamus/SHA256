@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Mar  4 00:23:53 2024
-# Process ID: 115912
+# Start of session at: Mon Apr  1 22:54:20 2024
+# Process ID: 40228
 # Current directory: C:/Users/Zach/SHA256/SHA256.runs/synth_1
 # Command line: vivado.exe -log SHA256_Core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SHA256_Core.tcl
 # Log file: C:/Users/Zach/SHA256/SHA256.runs/synth_1/SHA256_Core.vds
@@ -22,41 +22,164 @@ Command: synth_design -top SHA256_Core -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 116804
+INFO: [Synth 8-7075] Helper process launched with PID 39924
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 945.762 ; gain = 441.281
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 944.781 ; gain = 441.402
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'SHA256_Core' [C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v:23]
-WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v:40]
 INFO: [Synth 8-6155] done synthesizing module 'SHA256_Core' (0#1) [C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v:23]
+WARNING: [Synth 8-3848] Net outs0 in module/entity SHA256_Core does not have driver. [C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v:30]
+WARNING: [Synth 8-3848] Net outs1 in module/entity SHA256_Core does not have driver. [C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v:31]
+WARNING: [Synth 8-3848] Net outS0 in module/entity SHA256_Core does not have driver. [C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v:32]
+WARNING: [Synth 8-3848] Net outS1 in module/entity SHA256_Core does not have driver. [C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v:33]
+WARNING: [Synth 8-3848] Net outMaj in module/entity SHA256_Core does not have driver. [C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v:34]
+WARNING: [Synth 8-3848] Net outChoice in module/entity SHA256_Core does not have driver. [C:/Users/Zach/SHA256/SHA256.srcs/sources_1/new/SHA256_Core.v:35]
+WARNING: [Synth 8-3330] design SHA256_Core has an empty top module
+WARNING: [Synth 8-7129] Port outs0[31] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[30] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[29] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[28] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[27] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[26] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[25] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[24] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[23] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[22] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[21] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[20] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[19] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[18] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[17] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[16] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[15] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[14] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[13] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[12] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[11] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[10] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[9] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[8] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[7] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[6] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[5] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[4] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[3] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[2] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[1] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs0[0] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[31] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[30] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[29] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[28] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[27] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[26] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[25] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[24] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[23] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[22] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[21] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[20] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[19] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[18] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[17] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[16] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[15] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[14] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[13] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[12] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[11] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[10] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[9] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[8] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[7] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[6] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[5] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[4] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[3] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[2] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[1] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outs1[0] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[31] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[30] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[29] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[28] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[27] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[26] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[25] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[24] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[23] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[22] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[21] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[20] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[19] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[18] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[17] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[16] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[15] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[14] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[13] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[12] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[11] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[10] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[9] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[8] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[7] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[6] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[5] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[4] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[3] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[2] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[1] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS0[0] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS1[31] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS1[30] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS1[29] in module SHA256_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outS1[28] in module SHA256_Core is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1052.215 ; gain = 547.734
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1052.707 ; gain = 549.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1052.215 ; gain = 547.734
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1052.707 ; gain = 549.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1052.215 ; gain = 547.734
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1052.707 ; gain = 549.328
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1052.215 ; gain = 547.734
+Start Preparing Guide Design
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/Zach/SHA256/SHA256.srcs/utils_1/imports/synth_1/SHA256_Core.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1052.707 ; gain = 549.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1052.707 ; gain = 549.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1052.707 ; gain = 549.328
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
-+---XORs : 
-	   3 Input     32 Bit         XORs := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -74,21 +197,22 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design SHA256_Core has an empty top module
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1247.973 ; gain = 743.492
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1248.867 ; gain = 744.387
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1248.867 ; gain = 744.387
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -106,37 +230,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.871 ; gain = 745.391
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.871 ; gain = 745.391
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.871 ; gain = 745.391
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.871 ; gain = 745.391
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.871 ; gain = 745.391
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.871 ; gain = 745.391
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -149,41 +273,39 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT2 |     3|
-|2     |LUT3 |    29|
-|3     |IBUF |    32|
-|4     |OBUF |    32|
-+------+-----+------+
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |   192|
++------+------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    96|
+|1     |top      |       |   192|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.871 ; gain = 745.391
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.066 ; gain = 733.688
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.871 ; gain = 745.391
-Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.871 ; gain = 745.391
+Synthesis finished with 0 errors, 1 critical warnings and 461 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.066 ; gain = 733.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.066 ; gain = 733.688
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1262.105 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1239.996 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.941 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1343.980 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 1c2990e9
+Synth Design complete | Checksum: 36ef8427
 INFO: [Common 17-83] Releasing license: Synthesis
-19 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+19 Infos, 109 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1361.941 ; gain = 866.668
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1361.941 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1343.980 ; gain = 849.273
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1343.980 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Zach/SHA256/SHA256.runs/synth_1/SHA256_Core.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SHA256_Core_utilization_synth.rpt -pb SHA256_Core_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar  4 00:24:10 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  1 22:54:37 2024...
